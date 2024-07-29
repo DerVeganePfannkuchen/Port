@@ -1,0 +1,85 @@
+:root{
+    --BackgroundColor:rgb(247, 246, 243);
+    --SecondaryColor:rgb(114, 109, 116);
+    --TextAccentColor: rgb(183, 162, 185);
+    --Darkersecond: rgb(114, 109, 116);
+    
+
+}
+body{
+    margin: 0;
+    background-color: var(--BackgroundColor);
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    background-color: var(--Darkersecond);
+    display:flex;
+    position: fixed;
+    top:0px;
+    width: 96%;
+    flex-direction: row;
+    justify-content: space-between;
+    left:2%;
+    top:1%;
+    border-radius: 100px;
+    color: var(--BackgroundColor);
+}
+.title, .nav-items{
+    font-size: 2.1em;
+}
+.item-group{
+    display:flex;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 4vw;
+}
+.nav-items{
+    transition: ease-in-out .4s;
+    cursor: pointer;
+}
+
+.title{
+    margin-left: 4vw;
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
+.nav-items:hover, .title:hover {
+    color:var(--TextAccentColor);
+}
+.spacer{
+    height:25vh;
+}
+#home{
+    margin-left: 3.5vw;
+    background-color: var(--SecondaryColor);
+}
+.home-text{
+    box-sizing: border-box;
+    color: var(--BackgroundColor);
+    width: 80%;
+    margin: 2% 10%;
+    text-align: center;
+    padding: 2%;
+    font-size:3em;
+    background-color: var(--SecondaryColor);
+    border-radius: 50px;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+    animation-name: grow;
+    transition: all ease-in-out .4s;
+    
+}
+@keyframes grow {
+    0%{
+        border-bottom: .01em solid var(--TextAccentColor);
+        border-left: .01em solid var(--TextAccentColor);
+    }
+    100%{
+        border-bottom: .4em solid var(--TextAccentColor);
+        border-left: .4em solid var(--TextAccentColor); 
+    }
+}
+
