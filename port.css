@@ -3,6 +3,7 @@
     --SecondaryColor:rgb(114, 109, 116);
     --TextAccentColor: rgb(183, 162, 185);
     --Darkersecond: rgb(114, 109, 116);
+    --thirdColor:rgb(202, 202, 170);
     
 
 }
@@ -25,6 +26,7 @@ body{
     top:1%;
     border-radius: 100px;
     color: var(--BackgroundColor);
+    border-bottom: .01em solid var(--TextAccentColor);
 }
 .title, .nav-items{
     font-size: 2.1em;
@@ -81,5 +83,33 @@ body{
         border-bottom: .4em solid var(--TextAccentColor);
         border-left: .4em solid var(--TextAccentColor); 
     }
+}
+about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--thirdColor);
+    
+}
+.headshot{
+    margin: 5em 0px;
+    border-radius: 500px;
+    width: 30vw;
+
+}
+.edu-cert{
+    display:grid;
+    width: 94%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12vw;
+    row-gap: 12vw;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, max(400px, 100%/4)), 1fr));
+}
+.edu{
+    text-align: center;
+    border: .2em solid var(--BackgroundColor);
+    border-radius: 50px;
+    background-color: var(--SecondaryColor);
 }
 
