@@ -106,10 +106,17 @@ about{
     row-gap: 12vw;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, max(400px, 100%/4)), 1fr));
 }
-.edu{
+.edu, .about{
     text-align: center;
     border: .2em solid var(--BackgroundColor);
     border-radius: 50px;
-    background-color: var(--SecondaryColor);
+    background-color: var(--Darkersecond);
 }
-
+.about{
+    width: 94%;
+    margin-top: 12vw;
+    margin-bottom: 12vw;
+}
+.aboutP{
+    font-size: 2em;
+}
