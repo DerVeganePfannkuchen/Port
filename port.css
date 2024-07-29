@@ -108,9 +108,9 @@ about{
 }
 .edu, .about{
     text-align: center;
-    border: .2em solid var(--BackgroundColor);
+    border: .2em solid var(--Darkersecond);
     border-radius: 50px;
-    background-color: var(--Darkersecond);
+    background-color: var(--TextAccentColor);
 }
 .about{
     width: 94%;
