@@ -95,7 +95,7 @@ about{
 .headshot{
     margin: 5em 0px;
     border-radius: 500px;
-    width: 30vw;
+    width: 30%;
 
 }
 .edu-cert{
@@ -126,19 +126,15 @@ projects{
     flex-direction: column;
     align-items: center;
 }
-.Project{
-    width: 94%;
-    background-color: var(--thirdColor);
+.Project, .Projectr{
+    width: 80%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 .Projectr{
-    width: 94%;
-    background-color: var(--thirdColor);
-    display: flex;
     align-items: flex-end;
-    flex-direction: column;
+  
 }
 .projectTitle{
     font-size: 3em;
@@ -149,9 +145,15 @@ projects{
     text-align: center;
 }
 .projectItem{
-    height: 20.3em;
-    width:20.3em;
+    height: 20vw;
+    width:40%;
     background-color: var(--TextAccentColor);
+    border-radius: 50px;
+    transition: all ease-in-out .4s;
+}
+.projectItem:hover{
+    width: 80%;
+    height: 30vw;
 }
 
 
