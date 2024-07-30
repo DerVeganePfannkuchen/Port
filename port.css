@@ -120,3 +120,38 @@ about{
 .aboutP{
     font-size: 2em;
 }
+projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Project{
+    width: 94%;
+    background-color: var(--thirdColor);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.Projectr{
+    width: 94%;
+    background-color: var(--thirdColor);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.projectTitle{
+    font-size: 3em;
+    text-decoration: underline;
+}
+.projectName{
+    font-size: 3em;
+    text-align: center;
+}
+.projectItem{
+    height: 20.3em;
+    width:20.3em;
+    background-color: var(--TextAccentColor);
+}
+
+
